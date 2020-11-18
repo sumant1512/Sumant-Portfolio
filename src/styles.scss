@@ -1,178 +1,27 @@
-button:focus {
-  outline: none;
-}
-
-input:focus {
-  outline: none;
-}
-
-textarea:focus {
-  outline: none;
-}
-
-.f-14 {
-  font-size: 14px;
-}
-
-.z-0 {
-  z-index: 0 !important;
-}
-
-.p-12 {
-  padding: 12px !important;
-}
-
-input {
-  color: white;
-}
-
-.btn {
-  width: 100% !important;
-}
-
-.pt-8 {
-  padding-top: 6.4rem !important;
-}
-
-.p-6 {
-  padding: 5rem !important;
-}
-
-.p-8 {
-  padding: 8rem !important;
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.justify-item-center {
-  justify-items: center;
-}
-
 a:hover {
   cursor: pointer;
-}
-
-.d-grid {
-  display: grid !important;
-}
-
-.br-80 {
-  border-radius: 80px !important;
-}
-
-.br-50 {
-  border-radius: 50% !important;
-}
-
-.br-25 {
-  border-radius: 25px !important;
-}
-
-.br-bl-10 {
-  border-bottom-left-radius: 10px !important;
-}
-
-.br-br-10 {
-  border-bottom-right-radius: 10px !important;
-}
-
-.br-tl-10 {
-  border-top-left-radius: 10px !important;
-}
-
-.br-tr-10 {
-  border-top-right-radius: 10px !important;
 }
 
 .bg-dark-blue {
   background-color: #0d469f !important;
 }
 
-.bg-light-blue {
-  background-color: #1f58b1 !important;
-}
-
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-fade-blue {
-  background: linear-gradient(
-    to right,
-    rgba(57, 100, 208, 1) 0%,
-    rgba(45, 193, 201, 1) 100%
-  );
-}
-
-.text-fade-blue {
-  color: #98afe1 !important;
-}
-
-.text-light-blue {
-  color: #7aa1f5 !important;
 }
 
 .box-shadow {
   box-shadow: 0px 10px 50px -5px #000;
 }
 
-.svg-light-bottom {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #1f58b1;
-}
-
-.svg-dark-bottom {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #0d469f;
-}
-
-.button {
-  border-radius: 55px;
-  width: 130px;
-  height: 47px;
-  border: none;
-}
-
-.bg-common-button {
-  background: linear-gradient(
-    to right,
-    rgba(57, 100, 208, 1) 0%,
-    rgba(45, 193, 201, 1) 100%
-  );
-}
-
-.bg-common-button:hover {
-  background: linear-gradient(
-    to right,
-    rgba(45, 193, 201, 1) 0%,
-    rgba(57, 100, 208, 1) 100%
-  );
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mt-md-9 {
     margin-top: 5.5rem !important;
-  }
-  .bg-header {
-    background-color: #0d469f;
-  }
-  .btn {
-    width: 75% !important;
   }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .mt-sm-9 {
     margin-top: 5.5rem !important;
-  }
-  .bg-header {
-    background-color: #0d469f;
-  }
-  .btn {
-    width: 75% !important;
   }
 }
