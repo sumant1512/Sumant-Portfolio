@@ -13,7 +13,6 @@ export class AppComponent {
   // This function is for toggel of header
   toggleforHeader(selectedPage: ToggleStatusEmit) {
     this.status = selectedPage.toggleStatus;
-    console.log(selectedPage);
     if (selectedPage.selectedPage) {
       setTimeout(() => {
         document
@@ -22,9 +21,4 @@ export class AppComponent {
       }, 1);
     }
   }
-
-  myStyle: object = {};
-  myParams: object = {};
-  width: number = 100;
-  height: number = 100;
 }
