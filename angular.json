@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sumantPortfolio"
+    }
+  },
+  "defaultProject": "sumantPortfolio",
+  "cli": {
+    "analytics": "e28552e8-8465-4b05-85c0-b7fc1988e1a9"
+  }
 }
