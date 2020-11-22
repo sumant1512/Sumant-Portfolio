@@ -6,14 +6,23 @@
   #header
 >
   <nav
-    [ngClass]="scrollStatus || sideNavStatus ? 'box-shadow bg-dark-blue' : ''"
-    class="bg-dark-blue navbar navbar-expand-lg navbar-dark pt-3 pb-3 justify-content-sm-start"
+    [ngClass]="
+      scrollStatus || sideNavStatus ? 'box-shadow bg-dark' : 'bg-transparent'
+    "
+    class="bg-dark navbar navbar-expand-lg navbar-dark pt-3 pb-3 justify-content-sm-start"
   >
     <a
       class="navbar-brand order-0 pt-0 order-lg-0 pb-0 ml-0 ml-md-3 ml-lg-4 mr-auto"
       (click)="navigation('home')"
     >
-      <img class="nav-icon" src="../../assets/sumantLogo.png" />
+      <img class="nav-icon" src="../../assets/lightLogo.png" />
+
+      <!-- <div *ngIf="scrollStatus; else lightLogo">
+        <img class="nav-icon" src="../../assets/lightLogo.png" />
+      </div>
+      <ng-template #lightLogo>
+        <img class="nav-icon" src="../../assets/darkLogo.png" />
+      </ng-template> -->
     </a>
     <button
       class="navbar-toggler text-light border-0 mt-2 pt-1 align-self-start"
@@ -28,7 +37,7 @@
       </ng-template>
     </button>
     <div
-      [ngClass]="sideNavStatus ? 'open bg-dark-blue' : ''"
+      [ngClass]="sideNavStatus ? 'open bg-dark' : ''"
       class="collapse navbar-collapse mt-sm-9 mt-md-9 mt-lg-0 d-flex flex-column p-3 p-lg-0 flex-lg-row flex-xl-row justify-content-lg-end mobile-menu"
       id="navbarSupportedContent"
     >

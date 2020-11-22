@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    if (number > 450) {
+    if (number > 750) {
       this.scrollStatus = true;
       this.header.nativeElement.classList.add("sticky");
     } else {
@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit {
 
   // this function is to open and close the navigation in mobile and i-pad view
   navToggle() {
-    this.sideNavStatus = this.sideNavStatus ? false : true;
+    this.sideNavStatus = !this.sideNavStatus;
   }
 
   // this function is for navigation of pages
