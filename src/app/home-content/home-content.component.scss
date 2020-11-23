@@ -44,3 +44,15 @@
   color: white;
   background-color: green;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-content-banner {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .home-content-banner {
+    font-size: 22px;
+  }
+}
