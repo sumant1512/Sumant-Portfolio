@@ -11,6 +11,7 @@
         class="mb-3 mb-md-5 col-12 col-md-6 text-center text-md-right w3-animate-opacity w3-container w3-animate-left"
       >
         <button
+          (click)="scrollPage('contact')"
           class="hire-me-btn rounded py-1 py-md-3 text-center w-50"
           type="button"
         >
@@ -22,6 +23,7 @@
       >
         <div>
           <button
+            (click)="scrollPage('contact')"
             class="hire-me-btn rounded py-1 py-md-3 text-center w-50"
             type="button"
           >
@@ -34,7 +36,7 @@
       <div
         class="col-12 mt-3 mt-md-0 mb-md-5 w3-center w3-animate-opacity w3-container w3-animate-bottom"
       >
-        <a
+        <a (click)="scrollPage('portfolio')"
           ><i
             class="angle-down-icon rounded-circle p-2 fa fa-angle-down fa-3x"
             aria-hidden="true"
