@@ -7,7 +7,6 @@ import { ToggleStatusEmit } from "./header/header.type";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "sumantPortfolio";
   status: boolean = false;
 
   // This function is for toggel of header
