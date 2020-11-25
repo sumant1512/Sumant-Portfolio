@@ -16,7 +16,7 @@ export class AppComponent {
       setTimeout(() => {
         document
           .getElementById(selectedPage.selectedPage)
-          .scrollIntoView({ behavior: "smooth", inline: "nearest" });
+          .scrollIntoView({ behavior: "smooth" });
       }, 1);
     }
   }
