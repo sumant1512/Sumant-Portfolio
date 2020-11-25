@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { LightBottomSvgComponent } from './light-bottom-svg/light-bottom-svg.component';
 import { DarkBottomSvgComponent } from './dark-bottom-svg/dark-bottom-svg.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DarkBottomSvgComponent } from './dark-bottom-svg/dark-bottom-svg.compon
     ContactComponent,
     HomeContentComponent,
     LightBottomSvgComponent,
-    DarkBottomSvgComponent
+    DarkBottomSvgComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
