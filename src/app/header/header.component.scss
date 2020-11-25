@@ -1,0 +1,82 @@
+/* This is for header design and color */
+
+a {
+  color: white !important;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* list hover underline */
+
+li {
+  border-bottom: 3px solid transparent;
+}
+li:hover {
+  border-bottom: 3px solid white;
+}
+
+/* Header design and color */
+
+.nav-icon {
+  width: 67px;
+}
+
+/* This is for header animation for slide to down when page is scrolled */
+
+header {
+  z-index: 1030;
+}
+
+header.sticky {
+  animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+/* Animation end */
+
+/* This is for I-pad view to open header as side nav */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(-100%);
+    transition: all ease 0.7s;
+  }
+  .open {
+    width: 30%;
+    transform: translateX(0);
+  }
+}
+
+/* This is for Mobile view to open header as side nav */
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(-100%);
+    transition: all ease 0.7s;
+  }
+  .open {
+    width: 100%;
+    transform: translateX(0);
+  }
+}
