@@ -10,6 +10,8 @@ import { RecentWorkComponent } from './recent-work/recent-work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeContentComponent } from './home-content/home-content.component';
+import { LightBottomSvgComponent } from './light-bottom-svg/light-bottom-svg.component';
+import { DarkBottomSvgComponent } from './dark-bottom-svg/dark-bottom-svg.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeContentComponent } from './home-content/home-content.component';
     RecentWorkComponent,
     AboutComponent,
     ContactComponent,
-    HomeContentComponent
+    HomeContentComponent,
+    LightBottomSvgComponent,
+    DarkBottomSvgComponent
   ],
   imports: [
     BrowserModule,
