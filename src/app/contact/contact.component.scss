@@ -2,19 +2,25 @@
   padding: 12px 12px;
 }
 // all placeholder
-::placeholder{
+::placeholder {
   color: rgb(207, 182, 182);
 }
 
-.mobile{
+.mobile {
   font-size: 27px;
 }
-.globe{
+.globe {
   font-size: 18px;
 }
-.envelop{
+.envelop {
   font-size: 17px;
 }
-.map-mark{
+.map-mark {
   font-size: 28px;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid white;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
 }
