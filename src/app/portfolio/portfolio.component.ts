@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { WORKLIST } from "./portfolio.constant";
 
 @Component({
   selector: "app-portfolio",
@@ -6,13 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./portfolio.component.scss"],
 })
 export class PortfolioComponent implements OnInit {
-  workList = [
-    {
-      bannerImage: "../../assets/banner_1.jpeg",
-      navigationUrl: "https://bit-money.netlify.app/",
-      developedLanguage: "Angular 8",
-    },
-  ];
+  workList = WORKLIST;
 
   constructor() {}
 

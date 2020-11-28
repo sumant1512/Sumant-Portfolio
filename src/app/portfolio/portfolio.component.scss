@@ -1,3 +1,18 @@
+.card {
+  height: 225px;
+  background-color: hsla(39, 100%, 2%, 0.23);
+  border: 1px solid hsla(39, 100%, 2%, 0.36);
+  overflow: hidden;
+}
+.card:hover > .card-body {
+  bottom: 0;
+}
+.card-body {
+  bottom: -70px;
+  height: 70px;
+  transition: bottom 0.8s ease;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .horizontal-line {
     line-height: 1em;
