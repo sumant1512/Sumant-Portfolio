@@ -1,13 +1,13 @@
 <particles
   [params]="myParams"
   [style]="myStyle"
-  [width]="100"
-  [height]="100"
+  [width]="width"
+  [height]="height"
   class="position-fixed w-100 h-100 bg-dark-black"
   style="z-index: -1"
 ></particles>
 
-<div class="">
+<div>
   <app-header (toggleStatus)="toggleforHeader($event)"></app-header>
   <app-home id="home"></app-home>
   <app-home-content (toggleStatus)="toggleforHeader($event)"></app-home-content>
