@@ -83,7 +83,7 @@ export class AppComponent {
           width: 1,
         },
         move: {
-          speed: 6,
+          speed: 8,
         },
       },
     };
