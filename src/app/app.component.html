@@ -9,8 +9,7 @@
 
 <div>
   <app-header (toggleStatus)="toggleforHeader($event)"></app-header>
-  <app-home id="home"></app-home>
-  <app-home-content (toggleStatus)="toggleforHeader($event)"></app-home-content>
+  <app-home id="home" (toggleStatus)="toggleforHeader($event)"></app-home>
   <app-portfolio id="portfolio"></app-portfolio>
   <app-about (toggleStatus)="toggleforHeader($event)" id="about"></app-about>
   <app-contact id="contact"></app-contact>
