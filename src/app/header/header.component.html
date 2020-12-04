@@ -7,7 +7,9 @@
 >
   <nav
     [ngClass]="
-      scrollStatus || sideNavStatus ? 'box-shadow bg-dark-black' : 'bg-transparent'
+      scrollStatus || sideNavStatus
+        ? 'box-shadow bg-dark-black'
+        : 'bg-transparent'
     "
     class="bg-dark-black navbar navbar-expand-lg navbar-dark pt-3 pb-3 justify-content-sm-start"
   >
@@ -42,6 +44,12 @@
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link" (click)="scrollPage('portfolio')">PORTFOLIO</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" (click)="scrollPage('skills')">SKILLS</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" (click)="scrollPage('services')">SERVICES</a>
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link" (click)="scrollPage('about')">ABOUT</a>
