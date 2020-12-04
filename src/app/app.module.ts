@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { ParticlesModule } from "angular-particle";
 
 import { AppRoutingModule } from "./app-routing.module";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./home/home.component";
@@ -12,7 +13,8 @@ import { ContactComponent } from "./contact/contact.component";
 import { LightBottomSvgComponent } from "./light-bottom-svg/light-bottom-svg.component";
 import { DarkBottomSvgComponent } from "./dark-bottom-svg/dark-bottom-svg.component";
 import { FooterComponent } from "./footer/footer.component";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { SkillsComponent } from "./skills/skills.component";
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     LightBottomSvgComponent,
     DarkBottomSvgComponent,
     FooterComponent,
+    SkillsComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
