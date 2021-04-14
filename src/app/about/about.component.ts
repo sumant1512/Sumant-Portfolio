@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
   }
 
   downloadResume() {
-    var path = "../../assets/CV_Sumant_Mishra.pdf";
+    var path = "../../assets/sumant_mishra_resume.pdf";
     var save = document.createElement("a");
     save.href = path;
     save.download = "RESUME_SUMANT_MISHRA";
