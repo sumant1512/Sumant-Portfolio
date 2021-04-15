@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from "@angular/core";
 import * as Chart from "chart.js";
+import { isInViewport } from "../view-port-check";
 
 @Component({
   selector: "app-skills",
@@ -29,6 +30,7 @@ export class SkillsComponent implements AfterViewInit {
     fontStyle: "bold",
   };
   ngAfterViewInit() {
+    isInViewport(".animate-to-top");
     this.htmlCanvasCode();
     this.cssCanvasCode();
     this.bootstrapCanvasCode();

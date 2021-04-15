@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { isInViewport } from "../view-port-check";
 import { WORKLIST } from "./portfolio.constant";
 
 @Component({
@@ -11,5 +12,7 @@ export class PortfolioComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    isInViewport(".animate-to-top");
+  }
 }

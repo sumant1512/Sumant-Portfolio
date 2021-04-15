@@ -2,6 +2,11 @@ a:hover {
   cursor: pointer;
 }
 
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .top-0 {
   top: 0;
 }
@@ -27,6 +32,39 @@ a:hover {
   line-height: 0.1em;
   margin: 10px 0 20px;
 }
+
+/* bottom to top animation start */
+
+.bottom-to-top {
+  position: relative;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* bottom to top animation end */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mt-md-9 {

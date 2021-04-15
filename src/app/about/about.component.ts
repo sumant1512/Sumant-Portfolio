@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { ToggleStatusEmit } from "../header/header.type";
+import { isInViewport } from "../view-port-check";
 
 @Component({
   selector: "app-about",
@@ -11,7 +12,9 @@ export class AboutComponent implements OnInit {
   pending: boolean = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    isInViewport(".animate-to-top");
+  }
 
   // this function is for scrollPage of pages
   scrollPage(selectedPage: string) {

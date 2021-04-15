@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup } from "@angular/forms";
+import { isInViewport } from "../view-port-check";
 import { contactForm } from "./contact-form.utils";
 
 @Component({
@@ -13,9 +14,11 @@ export class ContactComponent implements OnInit {
     this.contactForm = contactForm();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    isInViewport(".animate-to-top");
+  }
 
-  submitMessage(){
+  submitMessage() {
     console.log(this.contactForm.value);
   }
 }

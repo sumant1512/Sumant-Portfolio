@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import * as Chart from "chart.js";
+import { isInViewport } from "../view-port-check";
 
 @Component({
   selector: "app-services",
@@ -21,6 +22,7 @@ export class ServicesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    isInViewport(".animate-to-top");
     this.uiCanvasCode();
     this.webCanvasCode();
     this.fullStackCanvasCode();
